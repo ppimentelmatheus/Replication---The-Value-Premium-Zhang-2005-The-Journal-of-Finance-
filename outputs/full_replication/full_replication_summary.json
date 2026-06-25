@@ -1,0 +1,111 @@
+{
+  "config": {
+    "n_firms": 5000,
+    "equilibrium_periods": 11000,
+    "stationary_periods": 10000,
+    "panel_periods": 421,
+    "panel_simulations": 20,
+    "nkp": 5000,
+    "cutoff": 1000,
+    "ks_max_iterations": 100,
+    "coefficient_tol": 0.01,
+    "vfi_max_iterations": 10000,
+    "vfi_tol_v": 0.001,
+    "vfi_tol_k": 1e-08,
+    "seed": 20250625,
+    "use_matlab_equilibrium": false,
+    "matlab_solution": "vpCode/vfi3Mat.mat",
+    "matlab_coefficients": "vpCode/coefIS.mat",
+    "stationary_mat": null,
+    "save_panel_arrays": "first",
+    "output_dir": "outputs/full_replication"
+  },
+  "equilibrium": {
+    "source": "python",
+    "coefficients": [
+      0.049651174775852756,
+      0.9818147459855313,
+      -0.12071924751953907,
+      0.0033195685130567266
+    ],
+    "r2": 0.9995699102294856,
+    "sighat": 0.001280406226252262,
+    "tstats": [
+      22.057443583835294,
+      1293.9573172038117,
+      -73.19655768782425,
+      4.235591953501037
+    ],
+    "iterations": 2,
+    "error": 0.003126780183545577,
+    "vfi_iterations": 105,
+    "vfi_errV": 0.0008247705087249813,
+    "vfi_errK": 0.0
+  },
+  "panels": {
+    "factor_files": [
+      "outputs/full_replication/panels/panel_001_factors.npz",
+      "outputs/full_replication/panels/panel_002_factors.npz",
+      "outputs/full_replication/panels/panel_003_factors.npz",
+      "outputs/full_replication/panels/panel_004_factors.npz",
+      "outputs/full_replication/panels/panel_005_factors.npz",
+      "outputs/full_replication/panels/panel_006_factors.npz",
+      "outputs/full_replication/panels/panel_007_factors.npz",
+      "outputs/full_replication/panels/panel_008_factors.npz",
+      "outputs/full_replication/panels/panel_009_factors.npz",
+      "outputs/full_replication/panels/panel_010_factors.npz",
+      "outputs/full_replication/panels/panel_011_factors.npz",
+      "outputs/full_replication/panels/panel_012_factors.npz",
+      "outputs/full_replication/panels/panel_013_factors.npz",
+      "outputs/full_replication/panels/panel_014_factors.npz",
+      "outputs/full_replication/panels/panel_015_factors.npz",
+      "outputs/full_replication/panels/panel_016_factors.npz",
+      "outputs/full_replication/panels/panel_017_factors.npz",
+      "outputs/full_replication/panels/panel_018_factors.npz",
+      "outputs/full_replication/panels/panel_019_factors.npz",
+      "outputs/full_replication/panels/panel_020_factors.npz"
+    ],
+    "mean_value_premium_table": [
+      [
+        0.7126854106109166,
+        -0.7241786853264388,
+        0.1775616534726795,
+        0.34564958767992476,
+        0.5614489061530867,
+        0.5278824063161872,
+        1.1224658811018224,
+        1.1896947056157745,
+        1.2953563694109191
+      ],
+      [
+        7.588913405909688,
+        1.0572301663785229,
+        1.044573030231769,
+        8.724211534410022,
+        8.123847585096124,
+        7.8485608489424905,
+        7.650208394254918,
+        7.300299979132211,
+        6.987073581273579
+      ],
+      [
+        1.9481304213781907,
+        -14.158902878446707,
+        3.521629048402834,
+        0.7767003347381858,
+        1.3705613844154025,
+        1.338129468529027,
+        2.955836010133372,
+        3.2889620037923004,
+        3.7509025499535427
+      ]
+    ],
+    "mean_aggregate_ratios": {
+      "iyr": 0.2147735536966513,
+      "ikr": 0.0099786221765569,
+      "theta": 0.11920367689675208,
+      "dyr": 0.18034146626385744,
+      "fyr": 0.5794410573279487
+    }
+  }
+}
