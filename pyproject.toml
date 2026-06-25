@@ -1,0 +1,14 @@
+[project]
+name = "zhang2005-replication"
+version = "0.1.0"
+description = "Python replication tools for Lu Zhang (2005), The Value Premium."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "numba>=0.59",
+  "matplotlib>=3.8",
+]
+
+[tool.ruff]
+line-length = 120
