@@ -1,0 +1,44 @@
+SYNTAX OF EDITBIN:
+
+The syntax is: editbin /stack:128000000 yourfile.dll you can change
+128 to whatever number you want. maybe you also need to change the
+stack size of matlab the syntax is: editbin /stack:128000000
+path/matlab.exe i think this will solve the problem. let me know how
+it does.
+
+
+Prepare to debug Fortran 90 MEX file:
+
+¡¤	Open DOS command prompt through the Accessory from start menu
+¡¤	Change current directory to the default one where the programs are
+¡¤	Under DOS command prompt:
+                   dfdev filename.dll
+¡¤	In project settings in Visual Studio, set path to be: 
+                   D:\matlabR12\bin\win32\matlab.exe
+        and program argument should be set to: 
+                          -nojvm
+¡¤	Debug
+
+
+How to Correct the Errors Found During Debug?
+
+¡¤	Exit the debugger
+¡¤	Correct the errors using Visual Fortran Editor and save the file
+¡¤	Under Matlab command window:
+                   mex ¨Cg filename.f90
+¡¤	Perform debugging again
+
+
+Running matlab 6.0 without Java Virtual Machine:
+
+¡¤	Under DOS command window:
+                   matlab -nojvm
+
+
+Compiling Acceleration: 
+
+¡¤	Under DOS command window perform accelerating compiling:
+             df -compile_only /optimize:5 /real_size:64 /fast /math_library:fast filename.f90
+¡¤	Linking filename.obj to filename.dll under Matlab command window:
+             mex filename.obj
+

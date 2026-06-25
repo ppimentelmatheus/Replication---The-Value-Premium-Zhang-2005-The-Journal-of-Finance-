@@ -1,0 +1,28 @@
+
+HOW TO ALTER MEX.PL TO GENERATE F90-MEX FILES ON MATLAB R11
+
+
+I recently tried to create MEX files from Fortran90 code in R12, and it
+seems F90 is still not supported.  The fix is slightly different than that
+for R11 in Matthew Roberts' FAQ page at
+http://www4.ncsu.edu:8030/~mcrober2/fmex/fmexfaqs.html
+
+I had success generating MEX files after altering in bin\win32\mex.pl
+lines 1216, 1283 and 1618 in obvious ways to identify *.f90 source files
+as fortran.  
+
+By the way, I'm using CVF 6.1, which is supported.  The command mex -setup
+found the compiler.  I haven't yet tried out the *.dll mex file I just
+created, but the compile seemed fine after making the few changes listed
+above.
+
+
+On R11: 
+
+(1) open c:\matlab\bin\mex.bat using notepad (or pico or emacs, for your *NIXers)
+(2) line 2338 is:
+    if ($EXTENSION =~ /(c|f|cc|cxx|cpp|for)$/i ) {
+change it to
+    if ($EXTENSION =~ /(c|f|cc|cxx|cpp|for|f90)$/i ) {
+(notice the "|f90"?)
+
