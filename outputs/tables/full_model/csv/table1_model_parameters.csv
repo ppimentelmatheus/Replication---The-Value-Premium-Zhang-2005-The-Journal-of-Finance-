@@ -1,0 +1,16 @@
+parameter,description,value
+beta,Subjective discount factor,0.994
+gamma0,Pricing kernel loading,50.0
+gamma1,Countercyclical price-of-risk loading,-1000.0
+eta,Inverse demand curvature,0.5
+alpha,Capital share,0.3
+delta,Depreciation rate,0.01
+theta_plus,Adjustment cost for positive investment,15.0
+theta_minus,Adjustment cost for negative investment,150.0
+f,Fixed operating cost,0.0365
+rho_x,Aggregate productivity persistence,0.9830475724915585
+sigma_x,Aggregate productivity volatility,0.0023333333333333335
+rho_z,Idiosyncratic productivity persistence,0.97
+sigma_z,Idiosyncratic productivity volatility,0.1
+N,Number of simulated firms,5000
+T,Number of simulated monthly periods,11000
