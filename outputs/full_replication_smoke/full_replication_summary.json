@@ -1,0 +1,81 @@
+{
+  "config": {
+    "n_firms": 20,
+    "equilibrium_periods": 11000,
+    "stationary_periods": 5,
+    "panel_periods": 80,
+    "panel_simulations": 1,
+    "nkp": 5000,
+    "cutoff": 1000,
+    "ks_max_iterations": 100,
+    "coefficient_tol": 0.01,
+    "vfi_max_iterations": 10000,
+    "vfi_tol_v": 0.001,
+    "vfi_tol_k": 1e-08,
+    "seed": 20250625,
+    "use_matlab_equilibrium": true,
+    "matlab_solution": "vpCode/vfi3Mat.mat",
+    "matlab_coefficients": "vpCode/coefIS.mat",
+    "stationary_mat": null,
+    "save_panel_arrays": "none",
+    "output_dir": "outputs/full_replication_smoke"
+  },
+  "equilibrium": {
+    "source": "matlab",
+    "coefficients": [
+      0.05805787268750154,
+      0.9789191161866293,
+      -0.14039338566778478,
+      0.004087096817739638
+    ],
+    "solution_path": "vpCode/vfi3Mat.mat",
+    "coefficient_path": "vpCode/coefIS.mat"
+  },
+  "panels": {
+    "factor_files": [
+      "outputs/full_replication_smoke/panels/panel_001_factors.npz"
+    ],
+    "mean_value_premium_table": [
+      [
+        1.2478978685422053,
+        NaN,
+        NaN,
+        -0.6059753764301891,
+        1.9849401471559531,
+        0.9680200127744487,
+        2.607613432476957,
+        2.124831965608867,
+        NaN
+      ],
+      [
+        7.14644396522877,
+        NaN,
+        NaN,
+        12.62309137175896,
+        10.370541583277772,
+        13.271809857451581,
+        5.612653849256241,
+        8.37384111643802,
+        NaN
+      ],
+      [
+        1.552038877310611,
+        NaN,
+        NaN,
+        -0.42668050156615517,
+        1.7012162569315814,
+        0.6482876236025075,
+        4.129414671836589,
+        2.2553472596207964,
+        NaN
+      ]
+    ],
+    "mean_aggregate_ratios": {
+      "iyr": 0.28657891802701074,
+      "ikr": 0.014678982337675294,
+      "theta": 0.13566074683625023,
+      "dyr": 0.10920219872751984,
+      "fyr": 0.5653413731984005
+    }
+  }
+}

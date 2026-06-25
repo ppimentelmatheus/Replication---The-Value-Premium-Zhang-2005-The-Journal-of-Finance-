@@ -1,0 +1,21 @@
+{
+  "n_firms": 5000,
+  "equilibrium_periods": 11000,
+  "stationary_periods": 10000,
+  "panel_periods": 421,
+  "panel_simulations": 20,
+  "nkp": 5000,
+  "cutoff": 1000,
+  "ks_max_iterations": 100,
+  "coefficient_tol": 0.01,
+  "vfi_max_iterations": 10000,
+  "vfi_tol_v": 0.001,
+  "vfi_tol_k": 1e-08,
+  "seed": 20250625,
+  "use_matlab_equilibrium": false,
+  "matlab_solution": "vpCode/vfi3Mat.mat",
+  "matlab_coefficients": "vpCode/coefIS.mat",
+  "stationary_mat": null,
+  "save_panel_arrays": "first",
+  "output_dir": "outputs/full_replication_dry_run"
+}

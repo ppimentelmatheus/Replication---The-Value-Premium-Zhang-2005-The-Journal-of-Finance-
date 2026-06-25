@@ -1,0 +1,11 @@
+{
+  "source": "matlab",
+  "coefficients": [
+    0.05805787268750154,
+    0.9789191161866293,
+    -0.14039338566778478,
+    0.004087096817739638
+  ],
+  "solution_path": "vpCode/vfi3Mat.mat",
+  "coefficient_path": "vpCode/coefIS.mat"
+}
